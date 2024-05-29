@@ -9,7 +9,7 @@ public:
     vector<int> nums = {1,2,3,4,5,6,7,8,9};
 
     void backtrack(vector<int>& track, vector<int>& nums, vector<bool>& used, int k, int n, int start){
-        if(n == 0 && track.size() == 3){
+        if(n == 0 && track.size() == k){
             result.push_back(track);
             return;
         }
